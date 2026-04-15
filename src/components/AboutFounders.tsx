@@ -10,117 +10,102 @@ export default function AboutFounders() {
     <section className="w-full flex justify-center px-[120px]" style={{ paddingBottom: '120px' }}>
       <div className="w-full max-w-[1680px] flex flex-col gap-[80px] items-center">
 
-        <p className="font-black leading-[80px] text-[80px] text-center text-white uppercase w-full">
+        <h2 className="font-black text-[80px] leading-[80px] text-center text-white uppercase w-full">
           Our Founders
-        </p>
+        </h2>
 
-        <div className="flex gap-[34px] items-center w-full">
+        <div className="flex gap-[34px] justify-center w-full">
 
           {/* ── Ivan Kalashniuk ── */}
-          <div className="bg-[#ffeded] flex h-[674px] items-center overflow-clip px-[34px] py-[42px] rounded-[8px] shrink-0">
-            <div className="flex flex-col gap-[82px] items-start shrink-0 w-[516px]">
-
-              <div className="flex flex-col gap-[40px] items-start w-full">
-
-                {/* Name + photo */}
-                <div className="flex gap-[8px] items-center w-full">
-
-                  {/* Name block */}
-                  <div className="h-[208px] relative shrink-0 w-[284px]">
-                    <div className="absolute flex flex-col gap-[8px] items-start left-0 top-0 w-[284px]">
-                      <div className="font-black leading-0 text-[40px] text-[#1a0a12] tracking-[0.4px] uppercase w-full whitespace-pre-wrap">
-                        <p className="leading-[42px] mb-0">Ivan </p>
-                        <p className="leading-[42px]">Kalashniuk</p>
-                      </div>
-                      <div className="relative shrink-0 size-[20px]">
-                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocial} />
-                      </div>
-                    </div>
-                    <p className="absolute font-normal leading-[27px] left-0 text-[24px] text-[#1a0a12] top-[154px] w-[284px]">
-                      Co-Founder & Chief Executive Officer
-                    </p>
+          <div className="bg-[#ffeded] flex flex-col h-[674px] overflow-hidden px-[34px] py-[42px] rounded-[8px] w-[584px]">
+            <div className="flex flex-col gap-[40px] w-full">
+              {/* Top Section: Name + Role + Photo */}
+              <div className="flex justify-between items-start w-full">
+                <div className="flex flex-col">
+                  <div className="font-black text-[40px] leading-[42px] text-[#1a0a12] tracking-[0.4px] uppercase">
+                    IVAN<br />KALASHNIUK
                   </div>
-
-                  {/* Photo circle */}
-                  <div className="relative shrink-0 size-[222px]">
-                    {/* Ellipse bg */}
-                    <div className="absolute" style={{ width: '210px', height: '210px', left: '6px', top: '5px' }}>
-                      <img alt="" className="w-full h-full" src={imgEllipse514} />
-                    </div>
-                    {/* Cropped photo */}
-                    <div className="absolute overflow-hidden rounded-full" style={{ width: '210px', height: '210px', left: '6px', top: '5px', transform: 'rotate(3.53deg)' }}>
-                      <img alt="" className="absolute max-w-none"
-                        style={{ height: '166.78%', left: '-4.24%', top: '-51.2%', width: '105.69%' }}
-                        src={imgD12A99722} />
-                    </div>
+                  <div className="mt-[8px] mb-[12px] flex items-center">
+                    <img alt="LinkedIn" className="size-[20px]" src={imgSocial} />
+                  </div>
+                  <div className="font-normal text-[24px] leading-[27px] text-[#1a0a12] max-w-[280px]">
+                    Co-Founder & Chief Executive Officer
                   </div>
                 </div>
 
-                {/* Bio */}
-                <div className="font-normal h-[171px] leading-0 text-[18px] text-[#1a0a12] w-full whitespace-pre-wrap">
-                  <p className="leading-[21px] mb-0">I have a sharp commercial instinct built over 7+ years in iGaming, spotting opportunities others often miss. </p>
-                  <p className="leading-[21px] mb-0">Leading Dominator Play, I focus on building long-term partnerships that address our partners' challenges and deliver measurable results. Our performance-driven math, adaptable RTP and volatility, market-fit mechanics, and fast integration ensure we meet their goals efficiently.</p>
-                  <p className="leading-[21px] mb-0">At Dominator Play, I make sure every decision is guided by data and full accountability. We move fast, with precision, leaving nothing to chance.</p>
+                {/* Photo Circle */}
+                <div className="relative size-[222px] shrink-0">
+                  <div className="absolute inset-0 bg-[#ffeded]" style={{ borderRadius: '50%' }}>
+                    <img alt="" className="w-full h-full" src={imgEllipse514} />
+                  </div>
+                  <div className="absolute inset-[6px] overflow-hidden rounded-full transform rotate-[3.53deg]">
+                    <img alt="Ivan Kalashniuk" className="absolute max-w-none"
+                      style={{ height: '166.78%', left: '-4.24%', top: '-51.2%', width: '105.69%' }}
+                      src={imgD12A99722} />
+                  </div>
                 </div>
               </div>
 
-              {/* Quote */}
-              <p className="font-medium italic leading-[24px] text-[24px] text-black w-[427px] whitespace-pre-wrap">
-                Quote:{'\n'}{` "Risk more than others think is safe."`}
+              {/* Bio */}
+              <div className="flex flex-col gap-[15px] font-normal text-[18px] leading-[21px] text-[#1a0a12]">
+                <p>I have a sharp commercial instinct built over 7+ years in iGaming, spotting opportunities others often miss.</p>
+                <p>Leading Dominator Play, I focus on building long-term partnerships that address our partners&apos; challenges and deliver measurable results. Our performance-driven math, adaptable RTP and volatility, market-fit mechanics, and fast integration ensure we meet their goals efficiently.</p>
+                <p>At Dominator Play, I make sure every decision is guided by data and full accountability. We move fast, with precision, leaving nothing to chance.</p>
+              </div>
+            </div>
+
+            {/* Quote - Pushed to bottom */}
+            <div className="mt-auto">
+              <p className="font-medium text-[24px] leading-[28px] text-black">
+                <span className="font-bold">Quote:</span><br />
+                <span className="italic font-bold">&quot;Risk more than others think is safe.&quot;</span>
               </p>
             </div>
           </div>
 
           {/* ── Constantin Molodtov ── */}
-          <div className="bg-[#ffeded] flex h-[674px] items-center overflow-clip px-[34px] py-[42px] rounded-[8px] shrink-0 w-[584px]">
-            <div className="flex flex-col gap-[20px] items-center w-[529px]">
-
-              <div className="flex flex-col gap-[40px] items-start w-full">
-
-                {/* Name + photo */}
-                <div className="flex gap-[8px] items-center w-full">
-
-                  {/* Name block */}
-                  <div className="h-[202px] relative shrink-0 w-[270px]">
-                    <div className="absolute flex flex-col gap-[8px] items-start left-0 top-0 w-[270px]">
-                      <div className="font-black leading-0 text-[40px] text-[#1a0a12] uppercase">
-                        <p className="leading-[40px] mb-0 whitespace-pre">Constantin </p>
-                        <p className="leading-[40px] whitespace-pre">Molodtov</p>
-                      </div>
-                      <div className="relative shrink-0 size-[20px]">
-                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSocial} />
-                      </div>
-                    </div>
-                    <p className="absolute font-normal leading-[27px] left-0 text-[24px] text-[#1a0a12] top-[148px] w-[270px]">
-                      Co-Founder & Chief Product Officer
-                    </p>
+          <div className="bg-[#ffeded] flex flex-col h-[674px] overflow-hidden px-[34px] py-[42px] rounded-[8px] w-[584px]">
+            <div className="flex flex-col gap-[40px] w-full">
+              {/* Top Section: Name + Role + Photo */}
+              <div className="flex justify-between items-start w-full">
+                <div className="flex flex-col">
+                  <div className="font-black text-[40px] leading-[42px] text-[#1a0a12] tracking-[0.4px] uppercase">
+                    CONSTANTIN<br />MOLODTOV
                   </div>
-
-                  {/* Photo circle */}
-                  <div className="relative shrink-0 size-[222px]">
-                    {/* Ellipse bg */}
-                    <div className="absolute inset-0">
-                      <img alt="" className="w-full h-full" src={imgEllipse516} />
-                    </div>
-                    {/* Cropped photo */}
-                    <div className="absolute overflow-hidden rounded-full inset-0" style={{ transform: 'rotate(5.31deg)' }}>
-                      <img alt="" className="absolute max-w-none"
-                        style={{ height: '86.65%', left: '12.2%', top: '-13.59%', width: '71.08%' }}
-                        src={imgImg19014Constantin} />
-                    </div>
+                  <div className="mt-[8px] mb-[12px] flex items-center">
+                    <img alt="LinkedIn" className="size-[20px]" src={imgSocial} />
+                  </div>
+                  <div className="font-normal text-[24px] leading-[27px] text-[#1a0a12] max-w-[280px]">
+                    Co-Founder & Chief Product Officer
                   </div>
                 </div>
 
-                {/* Bio */}
-                <p className="font-normal h-[189px] leading-[21px] text-[18px] text-[#1a0a12] w-full">
-                  For 7+ years, I've been building games that don't just perform — they compete to dominate. A player doesn't return for the payout. They return for the surge right before it, the moment of tension, the split second when control feels possible, the impulse to play again. If you don't understand that rhythm, you're not building a product. You're shipping a temporary distraction. Every mechanic at Dominator Play follows my lead — built to hit that peak, data-backed, performance-tested, and designed to drive GGR, not impressions.
-                </p>
+                {/* Photo Circle */}
+                <div className="relative size-[222px] shrink-0">
+                  <div className="absolute inset-0 bg-[#ffeded]" style={{ borderRadius: '50%' }}>
+                    <img alt="" className="w-full h-full" src={imgEllipse516} />
+                  </div>
+                  <div className="absolute inset-0 overflow-hidden rounded-full transform rotate-[5.31deg]">
+                    <img alt="Constantin Molodtov" className="absolute max-w-none"
+                      style={{ height: '86.65%', left: '12.2%', top: '-13.59%', width: '71.08%' }}
+                      src={imgImg19014Constantin} />
+                  </div>
+                </div>
               </div>
 
-              {/* Quote */}
-              <p className="font-medium italic leading-[24px] text-[24px] text-black w-full">
-                Quote:<br />
-                "Players don't return for the win — they return for the feeling that they can achieve more."
+              {/* Bio */}
+              <div className="font-normal text-[18px] leading-[21px] text-[#1a0a12]">
+                <p>
+                  For 7+ years, I&apos;ve been building games that don&apos;t just perform — they compete to dominate. A player doesn&apos;t return for the payout. They return for the surge right before it, the moment of tension, the split second when control feels possible, the impulse to play again. If you don&apos;t understand that rhythm, you&apos;re not building a product. You&apos;re shipping a temporary distraction. Every mechanic at Dominator Play follows my lead — built to hit that peak, data-backed, performance-tested, and designed to drive GGR, not impressions.
+                </p>
+              </div>
+            </div>
+
+            {/* Quote - Pushed to bottom */}
+            <div className="mt-auto">
+              <p className="font-medium text-[24px] leading-[28px] text-black">
+                <span className="font-bold">Quote:</span><br />
+                <span className="italic font-bold">&quot;Players don&apos;t return for the win — they return for the feeling that they can achieve more.&quot;</span>
               </p>
             </div>
           </div>
@@ -130,3 +115,4 @@ export default function AboutFounders() {
     </section>
   );
 }
+
