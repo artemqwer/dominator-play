@@ -14,7 +14,7 @@ export default function AboutCTABanner() {
             <p className="leading-[24px]">performance and growth like no other partner.</p>
           </div>
           <div
-            className="flex h-[82px] items-center justify-between px-[32px] py-[12px] rounded-[8px] shrink-0 w-[272px] cursor-pointer"
+            className="flex h-[82px] items-center justify-center px-[32px] py-[12px] rounded-[8px] shrink-0 w-[272px] cursor-pointer"
             style={{ backgroundColor: '#ff4f8b' }}
           >
             <div className="flex flex-col font-bold justify-center leading-0 text-[18px] text-white whitespace-nowrap">
