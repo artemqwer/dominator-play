@@ -28,7 +28,7 @@ export default function AboutHero() {
               Data-driven games built to deliver control, domination, and scalable operator revenue.
             </p>
             <div
-              className="flex h-[82px] items-center justify-between px-[32px] py-[12px] rounded-[8px] w-[272px] cursor-pointer"
+              className="flex h-[82px] items-center justify-center px-[32px] py-[12px] rounded-[8px] w-[272px] cursor-pointer"
               style={{ backgroundColor: '#ff4f8b' }}
             >
               <span className="font-bold text-white text-[18px] leading-[18px] whitespace-nowrap">Dominate Now</span>

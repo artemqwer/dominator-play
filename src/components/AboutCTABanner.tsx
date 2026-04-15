@@ -14,7 +14,7 @@ export default function AboutCTABanner() {
             <p>performance and growth like no other partner.</p>
           </div>
           <div
-            className="flex h-[82px] items-center justify-between px-[32px] py-[12px] rounded-[8px] w-[272px] cursor-pointer"
+            className="flex h-[82px] items-center justify-center px-[32px] py-[12px] rounded-[8px] w-[272px] cursor-pointer"
             style={{ backgroundColor: '#ff4f8b' }}
           >
             <span className="font-bold text-white text-[18px] leading-[18px] whitespace-nowrap">Dominate Now</span>
