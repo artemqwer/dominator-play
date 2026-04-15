@@ -41,7 +41,7 @@ export default function Header() {
           {/* Navigation Section */}
           <nav className="flex items-center gap-[32px]">
             <Link href="#" className="text-[14px] font-semibold text-white/70 hover:text-white transition-colors">Games</Link>
-            <Link href="#" className="text-[14px] font-semibold text-white/70 hover:text-white transition-colors">About Us</Link>
+            <Link href="/about" className="text-[14px] font-semibold text-white/70 hover:text-white transition-colors">About Us</Link>
             <div className="flex items-center gap-1 cursor-pointer group">
               <span className="text-[14px] font-semibold text-white/70 group-hover:text-white transition-colors">News</span>
               <svg width="10" height="6" viewBox="0 0 10 6" fill="none" className="opacity-50 group-hover:opacity-100 transition-opacity">
